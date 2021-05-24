@@ -18,27 +18,20 @@ const MenuBar = () => {
 
       <Menu pointing secondary size="large" color="orange">
         <Menu.Item
-          name="hacker news"
-          active={activeItem === "hacker news"}
+          name="Recent Articles"
+          active={activeItem === "Recent Articles"}
           onClick={handleItemClick}
           as={Link}
-          to="/"
+          to="/new"
         />
 
         <Menu.Menu position="right">
           <Menu.Item
-            name="new"
-            active={activeItem === "new"}
+            name="hacker questions"
+            active={activeItem === "hacker questions"}
             onClick={handleItemClick}
             as={Link}
-            to="/new"
-          />
-          <Menu.Item
-            name="past"
-            active={activeItem === "past"}
-            onClick={handleItemClick}
-            as={Link}
-            to="/past"
+            to="/ask"
           />
         </Menu.Menu>
       </Menu>

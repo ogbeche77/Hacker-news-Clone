@@ -1,7 +1,7 @@
 import React from "react";
 
-const Home = () => {
-  return <h1>New</h1>;
+const New = () => {
+  return <h1>Recent Articles</h1>;
 };
 
-export default Home;
+export default New;
