@@ -4,26 +4,28 @@ import "semantic-ui-css/semantic.min.css";
 import { Container } from "semantic-ui-react";
 import "./App.css";
 import MenuBar from "./components/MenuBar";
+import DisplayArticles from "./components/DisplayArticles";
 import Home from "./pages/Home";
 import New from "./pages/New";
-import Past from "./pages/Past";
+import AskQuestions from "./pages/AskQuestions";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
-    <>
+    <div className="app-container">
       <Router>
         <Container>
           <MenuBar />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/:type" component={DisplayArticles} />
             <Route exact path="/new" component={New} />
-            <Route exact path="/past" component={Past} />
+            <Route exact path="/ask" component={AskQuestions} />
             <Route component={NotFound} />
           </Switch>
         </Container>
       </Router>
-    </>
+    </div>
   );
 };
 
