@@ -18,9 +18,9 @@ const App = () => {
           <MenuBar />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/:type" component={DisplayArticles} />
-            <Route exact path="/new" component={New} />
-            <Route exact path="/ask" component={AskQuestions} />
+            <Route path="/:type" component={DisplayArticles} />
+            <Route path="/new" component={New} />
+            <Route path="/ask" component={AskQuestions} />
             <Route component={NotFound} />
           </Switch>
         </Container>
