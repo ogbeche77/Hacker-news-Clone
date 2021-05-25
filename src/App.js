@@ -8,7 +8,6 @@ import DisplayArticles from "./components/DisplayArticles";
 import Home from "./pages/Home";
 import New from "./pages/New";
 import AskQuestions from "./pages/AskQuestions";
-import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
@@ -19,9 +18,8 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/:type" component={DisplayArticles} />
-            <Route path="/new" component={New} />
-            <Route path="/ask" component={AskQuestions} />
-            <Route component={NotFound} />
+            <Route exact path="/new" component={New} />
+            <Route exact path="/ask" component={AskQuestions} />
           </Switch>
         </Container>
       </Router>
