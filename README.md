@@ -5,7 +5,8 @@
 ## Table of contents
 
 - [General info](#general-info)
-- [How to run the app](#How-to-run-the-app)
+
+- [How to run the app](#how-to-run-the-app)
 
 ## General info
 
@@ -18,4 +19,4 @@ A clone version of Hackernews was built using ReactJS, Semantic-UI-React and CSS
 2. Run:
    `npm install`,
 
-   `npm start` **to start the react app**,
+   `npm start` ***to start the application***,
